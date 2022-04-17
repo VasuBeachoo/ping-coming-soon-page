@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.gray-text {
+  color: hsl(0, 0%, 59%);
+}
+
+.dark-blue-text {
+  color: hsl(209, 33%, 12%);
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.regular-text {
+  font-weight: 400;
+}
+
+.semi-bold-text {
+  font-weight: 600;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.component-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+  width: 450px;
+  margin: 35px;
+}
+
+.logo {
+  width: 57px;
+  margin-bottom: 30px;
+}
+
+.component-heading {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.component-paragraph {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.email-input {
+  width: 220px;
+  padding: 9px 17px;
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1.4px solid hsl(0, 0%, 59%);
+  opacity: 0.35;
+  margin-right: 7px;
+}
+
+.submit-input {
+  background-color: hsl(223, 87%, 63%);
+  font-size: 11.5px;
+  letter-spacing: 0.5px;
+  width: 125px;
+  padding: 11px 0;
+  border-radius: 20px;
+  border: 0;
+  text-align: center;
+  transition: 0.25s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.submit-input:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.dashboard-img {
+  width: 380px;
+  margin-top: 50px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 125px;
+  margin-top: 45px;
+}
+
+.social-media-icon {
+  font-size: 13px;
+  color: hsl(223, 87%, 63%);
+  padding: 8px 10px;
+  border: 1px solid hsl(0, 13%, 89%);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.social-media-icon:hover {
+  cursor: pointer;
+  background-color: hsl(223, 87%, 63%);
+  color: hsl(0, 0%, 100%);
+  border-color: hsl(223, 87%, 63%);
+}
+
+.copyright-text {
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  margin-top: 17px;
+}
