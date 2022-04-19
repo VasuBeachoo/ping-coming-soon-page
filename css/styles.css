@@ -14,6 +14,10 @@ body {
   color: hsl(209, 33%, 12%);
 }
 
+.red-text {
+  color: hsl(354, 100%, 66%);
+}
+
 .light-text {
   font-weight: 300;
 }
@@ -63,6 +67,18 @@ body {
   margin-bottom: 25px;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 50px;
+}
+
+.email-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .email-input {
   width: 220px;
   padding: 9px 17px;
@@ -71,6 +87,16 @@ body {
   border: 1.4px solid hsl(0, 0%, 59%);
   opacity: 0.35;
   margin-right: 7px;
+}
+
+.email-input:invalid {
+  border-color: hsl(354, 100%, 66%);
+}
+
+.error-msg {
+  font-size: 9px;
+  font-style: italic;
+  margin: 4px 0 0 19px;
 }
 
 .submit-input {
@@ -94,14 +120,14 @@ body {
 
 .dashboard-img {
   width: 380px;
-  margin-top: 50px;
+  margin-top: 37px;
 }
 
 .social-media-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 125px;
+  width: 130px;
   margin-top: 45px;
 }
 
@@ -124,5 +150,6 @@ body {
 .copyright-text {
   color: hsl(0, 0%, 59%);
   font-size: 10px;
-  margin-top: 17px;
+  opacity: 0.8;
+  margin-top: 20px;
 }

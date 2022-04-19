@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -25,19 +23,23 @@
         <p class="component-paragraph regular-text dark-blue-text">
           Subscribe and get notified
         </p>
-        <form>
-          <input
-            class="email-input"
-            type="email"
-            name="user-email"
-            placeholder="Your email address..."
-            required
-          />
-          <input
-            class="submit-input regular-text white-text"
-            type="submit"
-            value="Notify Me"
-          />
+        <form class="email-form" novalidate>
+          <div class="form-container">
+            <div class="email-input-container">
+              <input
+                class="email-input"
+                type="email"
+                name="user-email"
+                placeholder="Your email address..."
+              />
+              <span class="error-msg-container"></span>
+            </div>
+            <input
+              class="submit-input regular-text white-text"
+              type="submit"
+              value="Notify Me"
+            />
+          </div>
         </form>
         <img
           src="./images/illustration-dashboard.png"
@@ -58,5 +60,6 @@
       src="https://kit.fontawesome.com/7e95a48abd.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
