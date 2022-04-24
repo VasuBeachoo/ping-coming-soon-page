@@ -15,8 +15,8 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     displayErrorMsg();
   } else {
-    errorMsg.innerText = "Please provide a valid email address";
     if (!emailInput.validity.valid) {
+      errorMsg.innerText = "Please provide a valid email address";
       e.preventDefault();
       displayErrorMsg();
     }
